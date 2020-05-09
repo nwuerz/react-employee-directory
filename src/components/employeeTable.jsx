@@ -1,4 +1,4 @@
-import React, { Component }from 'react';
+import React, { Component } from 'react';
 import Employee from './employee'
 import employees from './employees.json'
 
@@ -9,6 +9,18 @@ class EmployeeTable extends Component {
     };
         
       render() { 
+          //Each render we can look at employees and filter them down based on filterval.
+
+          // const newEmployees = employees
+          // .filter(employee => {
+          //     let existsIn = false
+          //     Object.keys(employee).forEach(key => {
+          //         const currentVal = employee[key];
+          //         console.log(currentVal, this.props.filterVal);
+          //     });
+          //    return existsIn;
+          // });
+
         return (
           <div className="container-fluid">
           <div className="row">
@@ -18,11 +30,11 @@ class EmployeeTable extends Component {
         <table className="table table-striped table-sm">
           <thead>
             <tr>
-              <th><a>Employee ID</a></th>
-              <th><a>First Name</a></th>
-              <th><a>Last Name</a></th>
-              <th><a>Department</a></th>
-              <th><a>Title</a></th>
+              <th><a href="#">Employee ID</a></th>
+              <th><a href="#">First Name</a></th>
+              <th><a href="#">Last Name</a></th>
+              <th><a href="#">Department</a></th>
+              <th><a href="#">Title</a></th>
             </tr>
           </thead>
           <tbody>
